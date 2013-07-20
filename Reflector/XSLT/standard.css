@@ -1,0 +1,26 @@
+.Type
+{
+	position: absolute;
+	float: left;
+	width: 192px;
+	margin: 8px;
+	border: 1px solid black;
+	background: rgb(204, 204, 204);
+}
+
+.Type .Name
+{
+	background: rgb(255, 255, 255);
+	font-weight: bold;
+}
+
+.Type .Members
+{
+//	width: 188px;
+	background: rgb(98, 249, 239);
+}
+
+.Type .Members .Member .Name
+{
+	font-weight: normal;
+}

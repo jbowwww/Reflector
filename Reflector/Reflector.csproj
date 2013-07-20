@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D0308AB8-23E7-481C-984F-6DCF9C2ABA50}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Reflector</RootNamespace>
+    <AssemblyName>Reflector</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+    <Commandlineparameters>/home/jk/Code/JGL/JGL/bin/Debug/JGL.dll</Commandlineparameters>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="gtk-sharp, Version=2.8.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="ReflectedAssembly.cs" />
+    <Compile Include="Object_Extension.cs" />
+    <Compile Include="ReflectedType.cs" />
+    <Compile Include="ReflectedModule.cs" />
+    <Compile Include="ReflectedContainer.cs" />
+    <Compile Include="ReflectedMember.cs" />
+    <Compile Include="IHtmlFormattable.cs" />
+    <Compile Include="ReflectedMethod.cs" />
+    <Compile Include="ReflectedField.cs" />
+    <Compile Include="ReflectedProperty.cs" />
+    <Compile Include="ReflectedEvent.cs" />
+    <Compile Include="ReflectedConstructor.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="Output.xml" />
+    <None Include="bin\Debug\JGL.dll.xml" />
+    <None Include="XSLT\JGL.dll %28copy2%29.xml" />
+    <None Include="XSLT\JGL.dll.xml" />
+    <None Include="XSLT\types.xslt" />
+    <None Include="XSLT\standard.css" />
+    <None Include="XSLT\debug.xsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="XSLT\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,40 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Reflector/XSLT/JGL.dll.xml">
+    <Files>
+      <File FileName="Reflector/XSLT/JGL.dll.xml" Line="2" Column="52" />
+      <File FileName="Reflector/XSLT/types.xsl" Line="25" Column="18" />
+      <File FileName="Reflector/XSLT/standard.css" Line="23" Column="8" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Reflector" expanded="True">
+            <Node name="bin" expanded="True">
+              <Node name="Debug">
+                <Option id="ShowAllFiles" value="True" />
+              </Node>
+            </Node>
+            <Node name="XSLT" expanded="True">
+              <Option id="ShowAllFiles" value="False" />
+              <Node name="JGL.dll.xml" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>value</Value>
+          <Value>value.MemberType</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
